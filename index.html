@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC - Indian Railway Catering and Tourism Corporation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="top-header-container">
+            <div class="datetime">
+                <span id="current-date">12-Jul-2025 [18:13:53]</span>
+                <div class="language-options">
+                    <a href="#" class="active">A-</a>
+                    <a href="#">A</a>
+                    <a href="#">A+</a>
+                    <a href="#">हिंदी</a>
+                </div>
+            </div>
+            <div class="alerts">
+                <a href="#"><i class="fas fa-bell"></i> ALERTS</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="./assets/IRCTC-logo.png" alt="IRCTC Logo">
+                <div class="logo-text">
+                    <h1>IRCTC</h1>
+                    <span>INDIAN RAILWAY CATERING AND TOURISM CORPORATION LTD.</span>
+                </div>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search trains, stations, services...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <!-- Section 1: User Account & Support -->
+                <li class="nav-item">
+                    <a href="#">USER ACCOUNT & SUPPORT <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">LOGIN</a></li>
+                        <li><a href="#">REGISTER</a></li>
+                        <li><a href="#">AGENT LOGIN</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">HELP & SUPPORT</a></li>
+                    </ul>
+                </li>
+
+                <!-- Section 2: Information & Notifications -->
+                <li class="nav-item">
+                    <a href="#">INFORMATION & NOTIFICATIONS <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">DAILY DEALS</a></li>
+                        <li><a href="#">ALERTS</a></li>
+                        <li><a href="#">12-Jul-2025 [18:13:53]</a></li>
+                        <li><a href="#">A-</a></li>
+                        <li><a href="#">A</a></li>
+                        <li><a href="#">A+</a></li>
+                        <li><a href="#">हिंदी</a></li>
+                    </ul>
+                </li>
+
+                <!-- Section 3: Travel & Booking Services -->
+                <li class="nav-item">
+                    <a href="#">TRAVEL & BOOKING SERVICES <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">TRAINS</a></li>
+                        <li><a href="#">IRCTC eWallet</a></li>
+                        <li><a href="#">BUSES</a></li>
+                        <li><a href="#">FLIGHTS</a></li>
+                        <li><a href="#">HOTELS</a></li>
+                        <li><a href="#">HOLIDAYS</a></li>
+                        <li><a href="#">MEALS</a></li>
+                    </ul>
+                </li>
+
+                <!-- Section 4: Promotional & Miscellaneous -->
+                <li class="nav-item">
+                    <a href="#">PROMOTIONAL & MISCELLANEOUS <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">IRCTC EXCLUSIVE</a></li>
+                        <li><a href="#">LOYALTY</a></li>
+                        <li><a href="#">PROMOTIONS</a></li>
+                        <li><a href="#">MORE</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Plan Your Journey With Ease</h2>
+                <p>Book train tickets, check PNR status, and explore IRCTC services</p>
+            </div>
+        </section>
+
+        <!-- Booking Form -->
+        <div class="booking-form">
+            <h3 class="form-title">Book Your Ticket</h3>
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="from-station">From Station</label>
+                        <input type="text" id="from-station" class="form-control" placeholder="Enter departure station">
+                    </div>
+                    <div class="form-group">
+                        <label for="to-station">To Station</label>
+                        <input type="text" id="to-station" class="form-control" placeholder="Enter arrival station">
+                    </div>
+                    <div class="form-group">
+                        <label for="journey-date">Journey Date</label>
+                        <input type="date" id="journey-date" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="class">Class</label>
+                        <select id="class" class="form-control">
+                            <option value="">All Classes</option>
+                            <option value="SL">Sleeper (SL)</option>
+                            <option value="3A">AC 3 Tier (3A)</option>
+                            <option value="2A">AC 2 Tier (2A)</option>
+                            <option value="1A">First Class (1A)</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Search Trains</button>
+            </form>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <h3 class="section-title">Our Services</h3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="./assets/R.png" alt="Train Booking">
+                    <div class="service-content">
+                        <h3>Train Ticket Booking</h3>
+                        <p>Book your train tickets online with confirmed seats and easy cancellation options.</p>
+                        <a href="#" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="./assets/pnr_status_h5_svg.svg" alt="PNR Status">
+                    <div class="service-content">
+                        <h3>PNR Status</h3>
+                        <p>Check your ticket confirmation status and journey details using your PNR number.</p>
+                        <a href="#" class="btn">Check Status</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="./assets/IRCTC-ecatering.webp" alt="Food on Train">
+                    <div class="service-content">
+                        <h3>Food on Train</h3>
+                        <p>Order delicious food from your favorite restaurants to be delivered to your seat.</p>
+                        <a href="#" class="btn">Order Food</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="./assets/GettyImages-497575251-5c48fd6f46e0fb00013899df.jpg" alt="Tourism">
+                    <div class="service-content">
+                        <h3>Tour Packages</h3>
+                        <p>Explore India with our exclusive tour packages including travel and stay.</p>
+                        <a href="#" class="btn">Explore Tours</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Book Ticket</a></li>
+                            <li><a href="#">Cancel Ticket</a></li>
+                            <li><a href="#">PNR Status</a></li>
+                            <li><a href="#">Train Schedule</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="#">About IRCTC</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Food on Train</a></li>
+                            <li><a href="#">Tour Packages</a></li>
+                            <li><a href="#">Hotels</a></li>
+                            <li><a href="#">Retiring Rooms</a></li>
+                            <li><a href="#">Coach Position</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect With Us</h4>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 IRCTC - Indian Railway Catering and Tourism Corporation Ltd. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</body>
+
+</html>
